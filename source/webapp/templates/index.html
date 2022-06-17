@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+</head>
+<body>
+
+<h1>Calculator</h1>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <label>First number:</label><br/>
+    <input type="number" name="firstnum"/><br/>
+    <label>Second number:</label><br/>
+    <input type="number" name="secondnum"/><br/>
+    <br/>
+    <p><input name="symbol" type="radio" value="+"> Сложить</p>
+    <p><input name="symbol" type="radio" value="-"> Вычесть</p>
+    <p><input name="symbol" type="radio" value="*"> Умножить</p>
+    <p><input name="symbol" type="radio" value="/"> Разделить</p>
+    <br/>
+    <input type="submit" value="Calculate"/>
+</form>
+</body>
+</html>
